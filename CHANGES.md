@@ -4,7 +4,7 @@
 
 First release of this PowerDNS/lmdb-go fork.
 
-- Renamed module from `github.com/bmatsuo/lmdb-go` to `github.com/PowerDNS/lmdb-go` (#3, PR #7)
+- Renamed module from `github.com/bmatsuo/lmdb-go` to `github.com/ChrisTrenkamp/lmdb-go` (#3, PR #7)
 - Add `go.mod` and fix tests and Travis CI on recent Go versions (#5, PR #6)
 - Fix: Cursor.Put would write "\x00" instead of an empty value (#1, PR #2)
 - Remove experimental, never released `exp/lmdbpool` package (PR #9)
@@ -68,7 +68,7 @@ Changes predating the PowerDNS fork (up to 2017):
   sync.Pool easier (bmatsuo/lmdb-go#104 bmatsuo/lmdb-go#105)
 
 ```
-go get github.com/PowerDNS/lmdb-go/exp/lmdbpool
+go get github.com/ChrisTrenkamp/lmdb-go/exp/lmdbpool
 ```
 
 - Silence aggressive struct initializer warning from clang (bmatsuo/lmdb-go#107)

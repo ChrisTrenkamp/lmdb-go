@@ -1,5 +1,5 @@
 /* lmdbgo.c
- * Helper utilities for github.com/PowerDNS/lmdb-go/lmdb
+ * Helper utilities for github.com/ChrisTrenkamp/lmdb-go/lmdb
  * */
 #include "lmdb.h"
 #include "lmdbgo.h"
