@@ -313,6 +313,10 @@ func (txn *Txn) OpenDBI(name string, flags uint) (DBI, error) {
 	return dbi, err
 }
 
+func (txn *Txn) OpenUnnamedDBI(flags uint) (DBI, error) {
+	return txn.openDBI(nil, flags)
+}
+
 // CreateDBI is a shorthand for OpenDBI that passed the flag lmdb.Create.
 func (txn *Txn) CreateDBI(name string) (DBI, error) {
 	return txn.OpenDBI(name, Create)
